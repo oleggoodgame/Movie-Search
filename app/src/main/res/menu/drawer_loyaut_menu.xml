@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Normal"
+        android:id="@+id/normal"
+        android:background="@drawable/drawable_menu"
+        android:checked="true"
+        />
+    <item android:title="Movies sorted"
+        android:id="@+id/movie_sorted"
+        android:background="@drawable/drawable_menu"
+        android:checked="true" />
+
+    <item android:title="Serial sorted"
+        android:id="@+id/serial_sorted"
+        android:background="@drawable/drawable_menu"
+        android:checked="true"
+        />
+    <item android:title="Games sorted"
+        android:id="@+id/games_sorted"
+        android:background="@drawable/drawable_menu"
+        android:checked="true"
+        />
+    <item android:title="Episode sorted"
+        android:id="@+id/episode_sorted"
+        android:background="@drawable/drawable_menu"
+        android:checked="true" />
+</menu>

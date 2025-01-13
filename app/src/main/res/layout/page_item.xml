@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/textViewPageNumber"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:gravity="center"
+    android:textAlignment="center"
+    android:textSize="24sp"
+    android:background="@drawable/drawable_page"
+    android:text="1">
+
+</TextView>

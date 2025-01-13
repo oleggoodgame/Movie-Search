@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Movie Search</string>
+    <string name="desription">Congratulations! This is a simple API movie search,
+        thanks for being free, but there is a 1,000 daily limit.
+        Here is the site I used https://www.omdbapi.com/
+        Test and enjoy! </string>
+
+    <string name="trying">Try to slide! It will help you ;)</string>
+    <string name="request">Request</string>
+    <string name="sorry">Sorry but u do not
+        have internet
+Please close program and try again</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

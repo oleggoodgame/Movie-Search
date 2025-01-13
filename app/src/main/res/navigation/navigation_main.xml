@@ -1,0 +1,86 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_main"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.moviersearch.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_recyclerViewFragment"
+            app:destination="@id/recyclerViewFragment" />
+        <argument
+            android:name="Search"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/recyclerViewFragment"
+        android:name="com.example.moviersearch.RecyclerViewFragment"
+        android:label="fragment_recycler_view"
+        tools:layout="@layout/fragment_recycler_view" >
+        <argument
+            android:name="Search"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_recyclerViewFragment_to_overViewFragment"
+            app:destination="@id/overViewFragment" />
+        <argument
+            android:name="Year"
+            app:argType="string" />
+        <argument
+            android:name="Poster"
+            app:argType="string" />
+        <argument
+            android:name="type"
+            app:argType="string" />
+        <argument android:name="imbID" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/overViewFragment"
+        android:name="com.example.moviersearch.OverViewFragment"
+        android:label="fragment_over_view"
+        tools:layout="@layout/fragment_over_view" >
+        <argument
+            android:name="Search"
+            app:argType="string" />
+        <argument
+            android:name="Year"
+            app:argType="string" />
+        <argument
+            android:name="Poster"
+            app:argType="string" />
+        <argument
+            android:name="type"
+            app:argType="string" />
+        <argument android:name="imbID"
+            app:argType="string"/>
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.example.moviersearch.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" >
+        <action
+            android:id="@+id/action_favoriteFragment_to_overViewFragment"
+            app:destination="@id/overViewFragment" />
+        <argument
+            android:name="Search"
+            app:argType="string" />
+        <argument
+            android:name="Year"
+            app:argType="string" />
+        <argument
+            android:name="Poster"
+            app:argType="string" />
+        <argument
+            android:name="type"
+            app:argType="string" />
+        <argument android:name="imbID"
+            app:argType="string"/>
+    </fragment>
+</navigation>
